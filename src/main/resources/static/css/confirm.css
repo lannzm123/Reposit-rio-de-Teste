@@ -1,0 +1,157 @@
+/* =========================
+RESET
+========================= */
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+CORES
+========================= */
+
+:root {
+    --verde: #2C5F34;
+    --indianred: indianred;
+    --branco: #FFFFFF;
+    --cinza-claro: #F8F8F8;
+    --texto: #333333;
+}
+
+/* =========================
+BODY
+========================= */
+
+body {
+    min-height: 100vh;
+    padding: 50px 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+
+    background-color: var(--verde);
+
+
+}
+
+/* =========================
+CONTAINER
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* =========================
+CARD
+========================= */
+
+.card {
+    padding: 40px;
+
+    background-color: var(--branco);
+
+    border-top: 8px solid var(--indianred);
+    border-radius: 15px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+
+}
+
+/* =========================
+TÍTULO
+========================= */
+
+h1 {
+    margin-bottom: 30px;
+
+    color: var(--verde);
+
+    font-size: 30px;
+    text-align: center;
+
+
+}
+
+/* =========================
+DADOS
+========================= */
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* =========================
+CAMPOS
+========================= */
+
+.dados p {
+    padding: 15px 18px;
+
+    background-color: var(--cinza-claro);
+
+    border-left: 5px solid var(--indianred);
+    border-radius: 8px;
+
+    line-height: 1.5;
+
+    transition: 0.2s ease;
+
+
+}
+
+/* =========================
+EFEITO HOVER
+========================= */
+
+.dados p:hover {
+    background-color: #F5EEEE;
+
+    transform: translateX(4px);
+
+
+}
+
+/* =========================
+LABELS
+========================= */
+
+.dados strong {
+    margin-right: 5px;
+
+    color: var(--verde);
+
+
+}
+
+/* =========================
+RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 12px;
+    }
+
+    .card {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .dados p {
+        font-size: 14px;
+    }
+
+
+}
