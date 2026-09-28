@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+form {
+    display: grid;
+    gap: .7rem;
+    width: min(100%, 38rem);
+}
+input,
+select,
+textarea {
+    width: 100%;
+    min-width: 0;
+    padding: .7rem;
+    background: white;
+    border: 5px solid indianred;
+    border-radius: .35rem;
+    font: inherit;
+    font-family: "Times New Roman", Times, Serif;
+}
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.opcao input {
+    width: auto;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center; /* centro vertical */
+    align-items: center;     /* centro horizontal */
+
+    text-align: center;
+    color: white;
+    background: #2C5F34;
+;
+}
