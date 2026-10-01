@@ -11,7 +11,7 @@
 <img src="/images/ifpb.png" alt="IFPB Campus Cajazeiras">
 <h1>Novo estudante</h1>
 
-<form method="post" action="/estudantes/confirmar">
+<form method="post" action="/estudantes">
     <input type="hidden" name="id" value="0">
 
     <label for="nome">Nome</label>
